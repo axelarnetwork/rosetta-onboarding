@@ -1,0 +1,96 @@
+request_funds(1){
+  find_account{
+    currency = {"symbol":"uaxl", "decimals":0};
+    random_account = find_balance({
+      "minimum_balance":{
+        "value": "1000",
+        "currency": {{currency}}
+      },
+      "create_limit":1
+    });
+  },
+
+  // Create a separate scenario to request funds so that
+  // the address we are using to request funds does not
+  // get rolled back if funds do not yet exist.
+  request{
+    loaded_account = find_balance({
+      "account_identifier": {{random_account.account_identifier}},
+      "minimum_balance":{
+        "value": "1000",
+        "currency": {{currency}}
+      }
+    });
+  }
+}
+// create_account(1){
+//   create{
+//     network = {"network":"network", "blockchain":"app"};
+//     key = generate_key({"curve_type": "secp256k1"});
+//     account = derive({
+//       "network_identifier": {{network}},
+//       "public_key": {{key.public_key}}
+//     });
+//     // If the account is not saved, the key will be lost!
+//     save_account({
+//       "account_identifier": {{account.account_identifier}},
+//       "keypair": {{key}}
+//     });
+//   }
+// }
+transfer(1){
+  transfer{
+    networkName = set_variable("axelar-testnet-lisbon-3");
+    transfer.network_identifier = {"network": {{networkName}}, "blockchain":"axelar"};
+    transfer.network = {"network":{{networkName}}, "blockchain":"axelar"};
+    currency = {"symbol":"uaxl", "decimals":0};
+    sender = find_balance({
+      "minimum_balance":{
+        "value": "100",
+        "currency": {{currency}}
+      }
+    });
+    acc_identifier = {{sender.account_identifier}};
+    sender_address = {{acc_identifier.address}};
+    // Set the recipient_amount as some value <= sender.balance-max_fee
+    max_fee = "10000";
+    fee_amount = "10000";
+    fee_value = 0 - {{fee_amount}};
+    available_amount = {{sender.balance.value}} - {{max_fee}};
+    recipient_amount = "200";
+    print_message({"recipient_amount":{{recipient_amount}}});
+    // Find recipient and construct operations
+    sender_amount = 0 - {{recipient_amount}};
+    recipient = find_balance({
+      "not_account_identifier":[{{sender.account_identifier}}],
+      "minimum_balance":{
+        "value": "0",
+        "currency": {{currency}}
+      }
+    });
+    transfer.confirmation_depth = "1";
+    recipient_account_identifier = {{recipient.account_identifier}};
+    recipient_address = {{recipient_account_identifier.address}};
+    transfer.operations = [
+      {
+        "operation_identifier":{"index":0},
+        "type":"/cosmos.bank.v1beta1.MsgSend",
+        "account":{{sender.account_identifier}},
+        "metadata": {
+          "amount": [
+            {
+              "amount": {{recipient_amount}},
+              "denom":  {{currency.symbol}}
+            }
+          ],
+          "from_address": {{sender_address}},
+          "to_address": {{recipient_address}}
+        }
+      }
+    ];
+    transfer.preprocess_metadata = {
+        "gas_price": "20uaxl",
+        "gas_limit": 250000
+    };
+  }
+}
