@@ -1,77 +1,80 @@
 {
-    "network": {
-     "blockchain": "axelar",
-     "network": "axelar-testnet-lisbon-3"
-    },
-    "online_url": "http://localhost:8080",
-    "data_directory": "axelar-testnet-lisbon-3",
-    "http_timeout": 300,
-    "max_retries":10,
-    "retry_elapsed_time":20,
+  "network": {
+   "blockchain": "axelar",
+   "network": "axelar-testnet-lisbon-3"
+  },
+  "online_url": "http://18.221.227.43:8080",
+  "data_directory": "axelar-testnet-lisbon-3",
+  "http_timeout": 300,
+  "max_retries":10,
+  "retry_elapsed_time":20,
+  "force_retry": true,
+  "tip_delay": 50,
+  "compression_disabled": false,
+  "log_configuration": false,
+  "construction": {
+    "offline_url": "http://localhost:8080",
+    "max_offline_connections": 120,
     "force_retry": true,
-    "tip_delay": 50,
-    "compression_disabled": false,
-    "memory_limit_disabled": false,
-    "log_configuration": true,
-    "construction": {
-      "offline_url": "http://localhost:8080",
-      "max_offline_connections": 120,
-      "force_retry": true,
-      "stale_depth": 100,
-      "broadcast_limit": 1,
-      "ignore_broadcast_failures": true,
-      "clear_broadcasts": true,
-      "broadcast_behind_tip": true,
-      "block_broadcast_limit": 10,
-      "status_port": 8082,
-      "rebroadcast_all": false,
-      "prefunded_accounts":[
-        {
-            "privkey":"de61d01f094884b60302e2462c4b1379799742143850c8899279ccd3d8d50aaf",
-            "account_identifier":{
-                "address":"axelar1vuxmpk3kmw5cn586y9hp7e3dkzlkr4gmcjfhs9"
-            },
-            "curve_type":"secp256k1",
-            "currency":{
-                "symbol":"uaxl"
-            }
-        },
-        {
-            "privkey":"9d52d7b45df2e26ddd1bfe5844fd99df8f8add5de2f0d35313de1a01b6d1f363",
-            "account_identifier":{
-                "address":"axelar19rkf6w659uwqe2j8848w63zxjmqu6mhzu5g56q"
-            },
-            "curve_type":"secp256k1",
-            "currency":{
-                "symbol":"uaxl"
-            }
-        }
-    ],
-      "constructor_dsl_file": "transfer.ros",
-      "initial_balance_fetch_disabled": true,
-      "end_conditions": {
-        "transfer": 1
+    "stale_depth": 100,
+    "broadcast_limit": 1,
+    "ignore_broadcast_failures": true,
+    "clear_broadcasts": true,
+    "broadcast_behind_tip": true,
+    "block_broadcast_limit": 10,
+    "status_port": 8082,
+    "rebroadcast_all": false,
+    "prefunded_accounts":[
+      {
+          "privkey":"de61d01f094884b60302e2462c4b1379799742143850c8899279ccd3d8d50aaf",
+          "account_identifier":{
+              "address":"axelar1vuxmpk3kmw5cn586y9hp7e3dkzlkr4gmcjfhs9"
+          },
+          "curve_type":"secp256k1",
+          "currency":{
+              "symbol":"uaxl"
+          }
+      },
+      {
+          "privkey":"9d52d7b45df2e26ddd1bfe5844fd99df8f8add5de2f0d35313de1a01b6d1f363",
+          "account_identifier":{
+              "address":"axelar19rkf6w659uwqe2j8848w63zxjmqu6mhzu5g56q"
+          },
+          "curve_type":"secp256k1",
+          "currency":{
+              "symbol":"uaxl"
+          }
       }
-    },
-    "data": {
-      "initial_balance_fetch_disabled":true,
-      "active_reconciliation_concurrency": 0,
-      "inactive_reconciliation_concurrency": 0,
-      "inactive_reconciliation_frequency": 0,
-      "log_blocks": false,
-      "log_transactions": false,
-      "log_balance_changes": true,
-      "log_reconciliations": true,
-      "ignore_reconciliation_error": false,
-      "bootstrap_balances": "testnet_bootstrap.json",
-      "historical_balance_enabled": true,
-      "interesting_accounts": "",
-      "reconciliation_disabled": false,
-      "balance_tracking_disabled": false,
-      "coin_tracking_disabled": false,
-      "start_index": 690490,
-      "end_conditions": {
+  ],
+    "constructor_dsl_file": "transfer.ros",
+    "initial_balance_fetch_disabled": true,
+    "end_conditions": {
+      "transfer": 1
+    }
+  },
+  "data": {
+    "initial_balance_fetch_disabled": false,
+    "active_reconciliation_concurrency":16,
+    "inactive_reconciliation_concurrency":4,
+    "inactive_reconciliation_frequency":250,
+    "log_blocks": false,
+    "log_transactions": false,
+    "log_balance_changes": true,
+    "log_reconciliations": true,
+    "ignore_reconciliation_error": false,
+    "exempt_accounts": "exempt_accounts.json",
+    "historical_balance_disabled": false,
+    "interesting_accounts": "",
+    "reconciliation_disabled": false,
+    "balance_tracking_disabled": false,
+    "coin_tracking_disabled": false,
+    "start_index": 3429625,
+    "end_conditions": {
+      "reconciliation_coverage": {
+        "coverage": 0.95,
+        "from_tip": true,
         "tip": true
       }
     }
+  }
 }
