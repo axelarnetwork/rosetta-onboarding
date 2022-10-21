@@ -1,0 +1,418 @@
+[
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "eth-wei", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/0135E2FAEE9C3209668578ABD63BAE6E92A4587A555B1300EE54F3071DCB71B5",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/0523200661F920419B3CA3BF6B77A8C3351E5D793F7432866703FFCB0AFCA660",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/0D500B3828C530E4D537FB9787FE04FB77A4A27504DE1A6CE821001FBEB11CC9",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/1105BF1408FB93874748C46896CCE15DE6000C89B71537A48A712048D1076B25",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/13045BA448BA3D449C97A0E4BF4EB5DDBB737B2A5AB466157CCD1A701F032967",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/13D8A6667E669C9F2753643D9070AC16A79E7DF86F6057481AC5222DCB246443",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/13E3E751C171DF4339AD3F88038580B02D2E4EB5064289404380B25F92252254",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/212C32A350C0A49A2035F8F148A3B8D8214D05320B686CB11DB7B48901FA36B6",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/21DBA5EA370FF1D10FB94287A208383714B73E60957F1E09188D02C5D9DC4988",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/242FB37E7B31684996839F92A8F5A921F6728E50E922E39AC874CFCA95A0CFD9",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/30867CBFF060C881F88DE52CCAF40E1DB3CB1F7EAE1E5C1E9F46EC4D9379DFD2",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/310CF3D70E0D6E45CDD2F2CA0CBA0F66E49E478201151664FFC0A1F263549D63",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/387A474359DC0FD75C7CA5DF208EC3726539DE42DE7F9D9F448AAA44F56C150C",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/38E457ABE4C17756DB193E1AA92999C8C5A0A501535993861E643A9EA5B8FBAB",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/3CDC259A0607D8F29C8A1A2B642843FDD450EA50EAD9C5427A409FAE92424049",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/4326D0FAAF5CBD2CB69C48326E6E0CE7B278F6F9467BEE2227371EB0B7DE552C",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/4627AD2524E3E0523047E35BB76CC90E37D9D57ACF14F0FCBCEB2480705F3CB8",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/4F3BF585C0A0323AD7316906F9C0857FB59F72C5188AB2B7FE1C7D5634C9B43E",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/5703EDF50588A1F0C25310F71F54A4240E3D2EAEFABFDD20CD5B296494107D1C",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/5FA0539CD741A455C89D300AC6E8AC05FB49956EDD597F0BE3CF49B63F240DDC",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/62625AE8DF7D4F637D1101AF670AE8142834322C717735F77D7A6F62FB129698",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/672A55B9A2F97391A45694D0A7E5A1BA419DFBC7EA6B455A5F7E5F49819F7C7F",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/69A692AB969474541BB72D51B2DB92EB59594BF2BF8B98B226E136315201FE28",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/6F4968A73F90CF7DE6394BF937D6DF7C7D162D74D839C13F53B41157D315E05F",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/70905CBEB13A6995EB250C9DB29F0236D05EBA21681948F4AE0A4AA90E1F19DE",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/74E1F62CF2F30A986965A04440662C75426E442769B0F6E72D51A2561A0F7041",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/76420E4A38F67EDC86DEE5EF4B41408003C5E6A4401B27DEF32679D0A4890899",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/79C60B5598B8B22499D9489D3BC9216B579607C51DFCF41937DCC71B7FE4FA71",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/7C50496B4904F8A1190F7D1B8B3145A65E9E37FC59B095646B59A57B1183FAF2",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/7CD259A22298A48116562CDE17E5664533B812192FB247290FEB7F1109ABF7EC",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/7E47E7ADFF4B89F9D8ABD52016697501A3041F4C6BFD2C3CCFE7A6EB3024269A",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/A77035AF12BBB11C0340BE804798C4B49F5332EA8C7523F471850C202C0742C5",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/AC7F0833C814C7C2C7D89961444BF2D08E694275BDF12B40375B5178733C9BF1",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/B193539F35ECA61BEFBA633DC39AC6C60A384E0BFAC27ED6EECFAF4C88549439",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/BF6EF8B1A6F38279EA6F44CFEAEE8A987A39034722C19C55D59973965B7C2884",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/C05BDD8DCA72E4F58BFB44E851100BCAAB6BAB2D45BFC2666448246777D9D553",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/C2363CC7A43E6723F2E228C869C05A901134F9EEB48D23701D6D3641D606FFD8",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/C533B9865337BA5BBCE6C1B429369967F11063FD2EE434BD79F616CF48F12767",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/CFD6047DA174280DA7B1E5C1C25D1F47A7C56EF93C6FEBC78D940E5DC3565C6F",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/D664932384FD06261F751759FAA09F078109AFBD836098895A64535FE560B7B2",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/D73D168790F3C072F38CFD35BCC72C356C1B300FBA32CF7B0199C75601FCC8BA",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/E1ABCC474B6E65C66CEBAD1365553CD988FB2A4FA94D8E66B3A951C6E81D7C66",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/E9593201ABA3DE17C3C606822A6EA07B4A80085A14A721ECDB4658B122EBE987",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/EA58E7CC79422B520B809C39EF9CCBDAA5FBEDDCB95EEE724320FAB168A72311",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/F177E901FE5DA042F226BB7346078AF7EB91DEE2066A4378BB5DD19B56D8B75A",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/F510A39DDB7B08DEB76CEBAF9D7CE2D8D952BED2A0E5E91F07F53BBF50BBBEE0",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/F668CFF5805D18D88ED1B947DAEB5FF7C3D979A84A0D7CEF06814BD361D61F6D",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/FA97FA9D41B65A9455651344DC90929D006C89BF0EAF961CD981C61C0248275D",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/FE2A3E8ADCF6FE182351D61EABAAF96478078FF24681F7309CD8F393E12F9357",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": {
+      "symbol": "ibc/18035011A07B5BBAFE3561530A04F3ACEDD1903612B1C8F9609DD41DB9566254",
+      "decimals": 0
+    }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "sammytoshi", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "uausdc", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "uaxl", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "uni-wei", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "uusdc", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "wavax-wei", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "wbnb-wei", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "wbtc-satoshi", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "wdev-wei", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "weth-wei", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "wftm-wei", "decimals": 0 }
+  },
+  {
+    "account_identifier": { "address": "burner" },
+    "currency": { "symbol": "wmatic-wei", "decimals": 0 }
+  }
+]

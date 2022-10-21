@@ -18,7 +18,7 @@
     "force_retry": true,
     "stale_depth": 100,
     "broadcast_limit": 1,
-    "ignore_broadcast_failures": true,
+    "ignore_broadcast_failures": false,
     "clear_broadcasts": true,
     "broadcast_behind_tip": true,
     "block_broadcast_limit": 10,
@@ -47,8 +47,9 @@
       }
   ],
     "constructor_dsl_file": "transfer.ros",
-    "initial_balance_fetch_disabled": true,
+    "initial_balance_fetch_disabled": false,
     "end_conditions": {
+      "create_account": 1,
       "transfer": 1
     }
   },
