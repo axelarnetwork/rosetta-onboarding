@@ -1,19 +1,25 @@
 # rosetta-onboarding
 ## Run a testnet node
-1. Download config and snapshot data
+1. setup config file
 ```
-wget https://axelar-snapshot-rosetta.s3.us-east-2.amazonaws.com/axelar-testnet-lisbon-3.tar.gz
+./scripts/setup.sh  -n testnet
 ```
-2. Unzip `axelar-testnet-lisbon-3.tar.gz` in $HOME directory
+2. Download snapshot data
+
+Assume `AXELARD_HOME="$HOME/.axelar_testnet"`
 ```
-tar -xvf axelar-testnet-lisbon-3.tar.gz
+cd $AXELARD_HOME
+wget https://axelar-snapshot-rosetta.s3.us-east-2.amazonaws.com/axelar-testnet.tar.lz4
+lz4 -dc --no-sparse axelar-testnet.tar.lz4 | tar xf -
 ```
 3. Run docker image
 ```
-docker run -d --name axelar-core -p 26656-26658:26656-26658 -p 8080:8080 --user 0:0 --restart unless-stopped \
---env HOME=/home/axelard --env START_REST=true -v "$HOME/.axelar/:/home/axelard/.axelar" \
-haiyizxx/axelar-core:v0.15.0-rosetta
+cd $HOME/rpsetta-onboarding
+export KEYRING_PASSWORD=[password]
+./scripts/docker.sh -n testnet -a haiyizxx/axelar-core:v0.26.3-ubuntu
 ```
+
 -----
-- Rosetta server runs on port 8080
-- The testnet genesis block height does not start from 1, so I have `start_index": 690490` in the config file to bootstrap data check
+Rosetta server runs on port 8080
+
+The rosetta implementation is not backwards compatible prior to v0.21, due to some breaking changes , so I have `start_index": 3429625` in the config file.
