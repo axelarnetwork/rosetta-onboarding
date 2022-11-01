@@ -121,12 +121,6 @@ check_environment() {
     if [[ "${#KEYRING_PASSWORD}" -lt 8 ]]; then msg "FAILED: KEYRING_PASSWORD must have length at least 8"; exit 1; fi
 }
 
-download_dependencies() {
-    msg "downloading required dependencies"
-    msg "downloading container for axelar-core $axelar_core_image"
-    docker pull "$axelar_core_image"
-}
-
 docker_mnemonic_path=""
 docker_tendermint_key=""
 
@@ -140,12 +134,6 @@ prepare() {
     else
         msg "docker network $docker_network already exists"
     fi
-    # if [ ! -f "${shared_directory}/consume-genesis.sh" ]; then
-    #     msg "copying consume genesis script"
-    #     cp "${git_root}/configuration/consume-genesis.sh" "${shared_directory}/consume-genesis.sh"
-    # else
-    #     msg "consume genesis script already exists"
-    # fi
 
     if [[ "${axelar_mnemonic_path}" != 'unset' ]] && [[ -f "$axelar_mnemonic_path" ]]; then
         msg "copying validator mnemonic"
@@ -213,8 +201,6 @@ parse_params "$@"
 setup_colors
 
 check_environment
-
-download_dependencies
 
 prepare
 
