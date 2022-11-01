@@ -36,7 +36,7 @@ lz4 -dc --no-sparse axelar-testnet.tar.lz4 | tar xf -
 ```
 cd $HOME/rpsetta-onboarding
 export KEYRING_PASSWORD=[password]
-./scripts/docker.sh -n testnet -a haiyizxx/axelar-core:v0.26.3-ubuntu
+./scripts/docker.sh -n testnet -a axelar-core:v0.26.5
 ```
 - manual
 ```
