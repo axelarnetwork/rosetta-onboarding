@@ -63,4 +63,7 @@ docker run                                                          \
 
 Rosetta server runs on port 8080
 
-The rosetta implementation is not backwards compatible prior to v0.21, due to some breaking changes, so I have `start_index": 3429625` in the config file.
+## Datacheck
+The rosetta implementation is not backwards compatible prior to v0.21
+- testnet start_index: 3429625
+- mainnet start_index: 3643500
