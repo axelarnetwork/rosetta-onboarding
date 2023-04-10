@@ -17,7 +17,7 @@ Available options:
 -v, --verbose                 Print script debug info
 -r, --reset-chain             Reset all chain data (erases current state including secrets)
 -d, --root-directory          Directory for data.
--n, --network                 Network to join [mainnet|testnet|testnet-2]
+-n, --network                 Network to join [mainnet|testnet]
 
 EOF
     exit
@@ -67,13 +67,6 @@ parse_params() {
         fi
         if [ -z "${root_directory}" ]; then
             root_directory="$HOME/.axelar_testnet"
-        fi
-    elif [ "$network" == "testnet-2" ]; then
-        if [ -z "${chain_id}" ]; then
-            chain_id=axelar-testnet-casablanca-1
-        fi
-        if [ -z "${root_directory}" ]; then
-            root_directory="$HOME/.axelar_testnet-2"
         fi
     else
         msg "Invalid network provided: '${network}'"
